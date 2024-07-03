@@ -1,14 +1,14 @@
-# Segmentation d'IRM cardiaque
+# Cardiac MRI Segmentation
 
-Dans le domaine de l’imagerie médicale, le diagnostic d’une image cardiaque par résonance magnétique nécessite parfois l’intervention de radiologues qui doivent délimiter manuellement les différentes structures du cœur, pour en extraire des informations fonctionnelles telles que le volume cardiaque au cours du temps ou encore la fraction d’éjection. Ce projet a donc pour but de créer un algorithme permettant d'aider le cardiologue dans ce diagnositc et de segmenter les différentes parties du coeur sur un IRM. 
+In the field of medical imaging, diagnosing a cardiac MRI sometimes requires radiologists to manually delineate the different structures of the heart to extract functional information such as cardiac volume over time or ejection fraction. This project aims to create an algorithm to assist the cardiologist in this diagnosis and segment the different parts of the heart in an MRI.
 
-## Pour commencer
+## Getting Started
 
-Ce projet a été réalisé avec Python et une interface utilisateur a été implémentée mais n'est pour l'instant disponible qu'en local car nous n'avons pas pris de serveur pour le stocker. Les IRM utilsés pour la base d'entraînement et validation ont été téléchargés à partir du site 
+This project was developed using Python, and a user interface has been implemented, but it is currently only available locally as we do not have a server to host it. The MRIs used for the training and validation dataset were downloaded from the site.
 
-### Pré-requis
+### Prerequisites
 
-Pour faire tourner ce programme, il est nécéssaire d'avoir Python dans une version égale ou ultérieure à 3.7 ainsi que les modules suivants installés :
+To run this program, you need Python version 3.7 or later and the following modules installed:
 - pandas
 - tensorflow  
 - opencv2
@@ -17,18 +17,6 @@ Pour faire tourner ce programme, il est nécéssaire d'avoir Python dans une ver
 
 ## Execution
 
-Pour éxecuter le programme, il suffit d'éxecuter le fichier python main.py pour avoir un exemple avec un IRM provenant de notre base de donnée. Il est aussi possible de l'éxecuter avec un autre IRM en remplaçant le fichier contenu dans prediction dans main.py par le nouvel IRM. L'éxecution renverra alors la segmentation du nouvel IRM selon notre algorithme.
+To execute the program, simply run the python file `main.py` to see an example with an MRI from our database. It is also possible to run it with another MRI by replacing the file in the `prediction` folder in `main.py` with the new MRI. The execution will then return the segmentation of the new MRI according to our algorithm.
 
-Afin de faciliter l'utilisation du programme, nous avons aussi développé une interface utilisateur en local avec flash et plotly. Elle n'est cependant pas disponible en ligne par manque de serveur d'hébergement mais le fichier peut être transféré sur demande.
-
-## Auteurs
-
-Les personnes ayant participé au projet sont listé c-dessous: 
-- Pierre Paynat alias @PaynatPierre
-- Alexandre Abela alias @alexandreabela
-- Basile Hogenmuller alias @bashog
-- Joey Skaf alias @jskaf34
-- Emma Mendizabal alias @Emma-IA
-- Vincent Lébé
-- Hugo Fourel
-- Jonathan Desnoyer
+To facilitate the use of the program, we have also developed a local user interface with Flask and Plotly. However, it is not available online due to the lack of a hosting server, but the file can be transferred upon request.
